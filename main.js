@@ -28,7 +28,7 @@ async function tts(text, lang, options = {}) {
         throw "Language not Support!";
     }
 
-    // 改进的默认值处理函数
+    // 默认值处理函数
     function getConfigValue(key, defaultValue) {
         const value = config?.[key];
         if (value === undefined || value === null || value === "" || 
