@@ -3,7 +3,7 @@
   "plugin_type": "tts",
   "icon": "gpt-sovits.svg",
   "display": "GPT-SoVITS TTS",
-  "homepage": "https://github.com/RVC-Boss/GPT-SoVITS",
+  "homepage": "https://github.com/cnolka/pot-app-tts-plugin-gpt_sovits",
   "needs": [
     {
       "key": "api_host",

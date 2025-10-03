@@ -58,8 +58,8 @@
 ### 鸣谢
 
 特别感谢以下项目与开发者的贡献：  
-- **GPT-SoVITS**（https://github.com/RVC-Boss/GPT-SoVITS）：感谢其开源的高质量少样本语音克隆项目，为本地化语音合成技术提供了强大支持。
-- **Pot**（https://github.com/pot-app/pot-desktop）：感谢其优秀的跨平台划词翻译与OCR框架，以及开放的插件系统，使得本插件能够顺利集成并服务于用户。
+- **GPT-SoVITS**（ https://github.com/RVC-Boss/GPT-SoVITS ）：感谢其开源的高质量少样本语音克隆项目，为本地化语音合成技术提供了强大支持。
+- **Pot**（ https://github.com/pot-app/pot-desktop ）：感谢其优秀的跨平台划词翻译与OCR框架，以及开放的插件系统，使得本插件能够顺利集成并服务于用户。
 
 ---
 
