@@ -59,8 +59,8 @@ With this GPT-SoVITS-TTS plugin, Pot-App users can now enjoy enterprise-quality 
 ### Acknowledgments
 
 Special thanks to the following projects and developers for their contributions:  
-- **GPT-SoVITS** (https://github.com/RVC-Boss/GPT-SoVITS): For their open-source high-quality few-shot voice cloning project, providing powerful support for localized speech synthesis technology.
-- **Pot** (https://github.com/pot-app/pot-desktop): For their excellent cross-platform text translation and OCR framework, as well as the open plugin system that enabled the smooth integration and service of this plugin.
+- **GPT-SoVITS** ( https://github.com/RVC-Boss/GPT-SoVIT S): For their open-source high-quality few-shot voice cloning project, providing powerful support for localized speech synthesis technology.
+- **Pot** ( https://github.com/pot-app/pot-desktop ): For their excellent cross-platform text translation and OCR framework, as well as the open plugin system that enabled the smooth integration and service of this plugin.
 
 ---
 
