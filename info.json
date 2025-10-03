@@ -1,0 +1,265 @@
+{
+  "id": "plugin.com.TechDecryptor.gpt_sovits_tts",
+  "plugin_type": "tts",
+  "icon": "gpt-sovits.svg",
+  "display": "GPT-SoVITS TTS",
+  "homepage": "https://github.com/RVC-Boss/GPT-SoVITS",
+  "needs": [
+    {
+      "key": "api_host",
+      "display": "API主机地址",
+      "type": "input",
+      "default": "127.0.0.1"
+    },
+    {
+      "key": "api_port",
+      "display": "API端口",
+      "type": "input",
+      "default": "9880"
+    },
+    {
+      "key": "gpt_weights_path",
+      "display": "GPT模型路径",
+      "type": "input",
+      "default": ""
+    },
+    {
+      "key": "sovits_weights_path",
+      "display": "SoVITS模型路径",
+      "type": "input",
+      "default": ""
+    },
+    {
+      "key": "ref_audio_path",
+      "display": "参考音频路径",
+      "type": "input",
+      "default": ""
+    },
+    {
+      "key": "prompt_text",
+      "display": "参考文本",
+      "type": "input",
+      "default": ""
+    },
+    {
+      "key": "prompt_lang",
+      "display": "参考文本语种",
+      "type": "select",
+      "options": {
+        "zh": "中文",
+        "en": "英文",
+        "ja": "日文",
+        "ko": "韩文",
+        "fr": "法文",
+        "es": "西班牙文",
+        "ru": "俄文",
+        "de": "德文",
+        "it": "意大利文",
+        "tr": "土耳其文",
+        "pt": "葡萄牙文",
+        "vi": "越南文",
+        "ms": "马来文",
+        "ar": "阿拉伯文",
+        "hi": "印地文"
+      },
+      "default": "zh"
+    },
+    {
+      "key": "speed",
+      "display": "语速",
+      "type": "select",
+      "options": {
+        "0.5": "慢速 (0.5x)",
+        "0.8": "稍慢 (0.8x)",
+        "1.0": "正常 (1.0x)",
+        "1.2": "稍快 (1.2x)",
+        "1.5": "快速 (1.5x)",
+        "2.0": "超快 (2.0x)"
+      },
+      "default": "1.0"
+    },
+    {
+      "key": "top_k",
+      "display": "Top-K",
+      "type": "select",
+      "options": {
+        "5": "5 (推荐)",
+        "10": "10",
+        "15": "15",
+        "20": "20",
+        "30": "30",
+        "50": "50"
+      },
+      "default": "5"
+    },
+    {
+      "key": "top_p",
+      "display": "Top-P",
+      "type": "select",
+      "options": {
+        "0.5": "0.5 (保守)",
+        "0.7": "0.7",
+        "0.8": "0.8",
+        "0.9": "0.9",
+        "1.0": "1.0 (推荐)",
+        "1.2": "1.2 (创造性)"
+      },
+      "default": "1.0"
+    },
+    {
+      "key": "temperature",
+      "display": "Temperature",
+      "type": "select",
+      "options": {
+        "0.5": "0.5 (确定性高)",
+        "0.7": "0.7",
+        "0.8": "0.8",
+        "1.0": "1.0 (推荐)",
+        "1.2": "1.2",
+        "1.5": "1.5 (创造性高)"
+      },
+      "default": "1.0"
+    },
+    {
+      "key": "text_split_method",
+      "display": "文本分割方法",
+      "type": "select",
+      "options": {
+        "cut0": "不分割",
+        "cut1": "按标点分割",
+        "cut2": "按句子分割",
+        "cut3": "按段落分割",
+        "cut4": "中文优化分割",
+        "cut5": "多语言优化分割"
+      },
+      "default": "cut5"
+    },
+    {
+      "key": "batch_size",
+      "display": "批处理大小",
+      "type": "select",
+      "options": {
+        "1": "1 (推荐)",
+        "2": "2",
+        "4": "4",
+        "8": "8",
+        "16": "16"
+      },
+      "default": "1"
+    },
+    {
+      "key": "batch_threshold",
+      "display": "批处理阈值",
+      "type": "select",
+      "options": {
+        "0.5": "0.5 (宽松)",
+        "0.6": "0.6",
+        "0.7": "0.7",
+        "0.75": "0.75 (推荐)",
+        "0.8": "0.8",
+        "0.9": "0.9 (严格)"
+      },
+      "default": "0.75"
+    },
+    {
+      "key": "split_bucket",
+      "display": "分桶处理",
+      "type": "select",
+      "options": {
+        "true": "是",
+        "false": "否"
+      },
+      "default": "true"
+    },
+    {
+      "key": "streaming_mode",
+      "display": "流式模式",
+      "type": "select",
+      "options": {
+        "true": "开启",
+        "false": "关闭"
+      },
+      "default": "true"
+    },
+    {
+      "key": "seed",
+      "display": "随机种子",
+      "type": "select",
+      "options": {
+        "-1": "-1 (随机)",
+        "42": "42 (推荐)",
+        "100": "100",
+        "200": "200",
+        "500": "500",
+        "1000": "1000"
+      },
+      "default": "42"
+    },
+    {
+      "key": "parallel_infer",
+      "display": "并行推理",
+      "type": "select",
+      "options": {
+        "true": "开启",
+        "false": "关闭"
+      },
+      "default": "true"
+    },
+    {
+      "key": "repetition_penalty",
+      "display": "重复惩罚",
+      "type": "select",
+      "options": {
+        "1.0": "1.0 (无惩罚)",
+        "1.2": "1.2",
+        "1.35": "1.35 (推荐)",
+        "1.5": "1.5",
+        "2.0": "2.0 (强惩罚)"
+      },
+      "default": "1.35"
+    },
+    {
+      "key": "sample_steps",
+      "display": "采样步数",
+      "type": "select",
+      "options": {
+        "16": "16 (快速)",
+        "24": "24",
+        "32": "32 (推荐)",
+        "48": "48",
+        "64": "64 (高质量)",
+        "100": "100 (极高品质)"
+      },
+      "default": "32"
+    },
+    {
+      "key": "super_sampling",
+      "display": "超采样",
+      "type": "select",
+      "options": {
+        "true": "开启",
+        "false": "关闭"
+      },
+      "default": "false"
+    }
+  ],
+  "language": {
+    "zh_cn": "zh_cn",
+    "zh_tw": "zh_tw",
+    "en": "en",
+    "ja": "ja",
+    "ko": "ko",
+    "fr": "fr",
+    "es": "es",
+    "ru": "ru",
+    "de": "de",
+    "it": "it",
+    "tr": "tr",
+    "pt_pt": "pt_pt",
+    "pt_br": "pt_br",
+    "vi": "vi",
+    "ms": "ms",
+    "ar": "ar",
+    "hi": "hi"
+  }
+}
