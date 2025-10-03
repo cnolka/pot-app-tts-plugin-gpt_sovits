@@ -40,7 +40,6 @@ async function tts(text, lang, options = {}) {
         return value;
     }
 
-    //
     let api_host = getConfigValue('api_host', '127.0.0.1');
     let api_port = getConfigValue('api_port', '9880');
     let gpt_weights_path = getConfigValue('gpt_weights_path', '');
