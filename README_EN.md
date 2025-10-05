@@ -10,20 +10,28 @@
 
 ### Prerequisites
 
-1. **Download the modified api_v2.py**:
-   - Obtain the modified `api_v2.py` file from the `gpt_sovits_fix/` directory of this project
+1. **Download the Modified api_v2.py**:
+   - Obtain the modified `api_v2.py` file from the `gpt_sovits_fix/` directory of this project.
 
-2. **Replace the original file**:
-   - Copy the downloaded `api_v2.py` file to your GPT-SoVITS installation directory
+2. **Replace the Original File**:
+   - Copy the downloaded `api_v2.py` file to your GPT-SoVITS installation directory.
    - Overwrite the original file: `GPT_SoVITS/api_v2.py`
-   - 📝Recommended to backup the original file: `cp api_v2.py api_v2.py.bak`
+   - 📝 It is recommended to back up the original file: `cp api_v2.py api_v2.py.bak`
 
-### Modification Details
-This modified `api_v2.py` primarily adds the `/tts_json` endpoint, supporting:
+3. **Use the Modified API Service**:
+   - Obtain the modified `GPT-SoVITS-API.bat` file from the `gpt_sovits_fix/` directory of this project.
+   - Add it to your GPT-SoVITS installation directory.
+   - Use `GPT-SoVITS-API.bat` to start the API service.
+
+### Modification Description
+This modified version of `api_v2.py` primarily adds the `/tts_json` endpoint, supporting:
 - Base64 encoded audio data return
 - Standardized JSON response format
-- Comprehensive error handling mechanism
-- Better Pot-App compatibility
+- Improved error handling mechanism
+- Better compatibility with Pot-App
+
+This modified version of `GPT-SoVITS-API.bat` primarily changes the `default binding address` to support:
+- LAN access
 
 ## Key Features
 

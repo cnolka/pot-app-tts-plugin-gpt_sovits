@@ -16,6 +16,10 @@
    - 将下载的 `api_v2.py` 文件复制到您的 GPT-SoVITS 安装目录
    - 覆盖原始文件：`GPT_SoVITS/api_v2.py`
    - 📝 建议备份原始文件：`cp api_v2.py api_v2.py.bak`
+3. **使用修改版 API服务**
+   - 从本项目的 `gpt_sovits_fix/` 目录获取修改版的 `GPT-SoVITS-API.bat` 文件
+   - 添加到您的 GPT-SoVITS 安装目录
+   - 使用 `GPT-SoVITS-API.bat` 启动API服务
 
 ### 修改内容说明
 此修改版 `api_v2.py` 主要增加了 `/tts_json` 接口，支持：
@@ -23,6 +27,8 @@
 - 标准化的 JSON 响应格式
 - 完善的错误处理机制
 - 更好的 Pot-App 兼容性
+此修改版 `GPT-SoVITS-API.bat` 主要修改了 `默认绑定地址` ，支持：
+- 局域网访问
 
 ## 主要特性
 
